@@ -1,0 +1,320 @@
+* {
+  font-family: "Museo Moderno", sans-serif;
+}
+
+.containr {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.promo {
+  min-height: 650px;
+  padding: 21px 0 93px 0;
+  background: url("../img/bg.png") center center/cover no-repeat;
+}
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 90px;
+}
+.promo__header {
+  font-weight: bold;
+  font-size: 42px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 42px;
+}
+.promo__subheader {
+  margin-top: 17px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.promo__icons {
+  margin-top: 60px;
+  width: 425px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.promo__icon {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.promo__icon img {
+  display: block;
+  margin: 0 auto 20px;
+}
+.promo__link {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: right;
+  color: #FFFFFF;
+  margin-top: 17px;
+}
+.promo__link a {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 250px;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__official {
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.header__official span {
+  font-size: 18px;
+  display: block;
+}
+.header__phone {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: right;
+  color: #FFFFFF;
+  display: block;
+  text-decoration: none;
+}
+.header__phone:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.button {
+  width: 153px;
+  height: 32px;
+  background: #c70101;
+  border-radius: 5px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.button_main {
+  width: 300px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 67px;
+}
+
+.advantage {
+  min-height: 473px;
+  background: #F6F6F6;
+  padding: 73px 0 65px 0;
+}
+.advantage__title {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: #0D0D0D;
+}
+.advantage__wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.advantage__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.advantage__subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #0D0D0D;
+  margin-top: 35px;
+}
+.advantage__descr {
+  margin-top: 20px;
+  width: 273px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #0D0D0D;
+}
+.advantage__descr a {
+  font-family: Museo Sans Cyrl, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #FF0000;
+}
+
+@media (max-width: 991px) {
+  .containr {
+    max-width: 740px;
+  }
+
+  .advantage__descr {
+    font-size: 13px;
+    width: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .containr {
+    max-width: 550px;
+  }
+
+  .header__logo {
+    width: 200px;
+  }
+  .header__official {
+    font-size: 9px;
+  }
+  .header__official span {
+    font-size: 13px;
+  }
+  .header__phone {
+    font-size: 17px;
+  }
+
+  .promo__header {
+    font-size: 33px;
+  }
+  .promo__subheader {
+    font-size: 21px;
+  }
+
+  .button_main {
+    width: 229px;
+    height: 42px;
+    font-size: 15px;
+  }
+
+  .button {
+    margin: 15px auto;
+  }
+
+  .advantage {
+    padding: 33px 0 35px 0;
+  }
+  .advantage__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .advantage__item {
+    padding-bottom: 35px;
+  }
+  .advantage__item:last-child {
+    padding-bottom: 0;
+  }
+  .advantage__subtitle {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .advantage__descr {
+    font-size: 16px;
+    width: 400px;
+  }
+}
+@media (max-width: 575px) {
+  .header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__logo {
+    width: 200px;
+  }
+  .header__official {
+    margin-top: 20px;
+    font-size: 9px;
+  }
+  .header__official span {
+    font-size: 13px;
+    display: inline-block;
+  }
+  .header__phone {
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+  .promo {
+    padding: 21px 0 23px 0;
+  }
+  .promo__wrapper {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .promo__header {
+    font-size: 25px;
+  }
+  .promo__subheader {
+    font-size: 14px;
+  }
+  .promo__icons {
+    width: 310px;
+  }
+
+  .containr {
+    max-width: 310px;
+  }
+
+  .advantage {
+    padding: 33px 0 35px 0;
+  }
+  .advantage__title {
+    font-size: 22px;
+  }
+  .advantage__wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .advantage__item {
+    padding-bottom: 25px;
+  }
+  .advantage__item:last-child {
+    padding-bottom: 0;
+  }
+  .advantage__subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .advantage__descr {
+    margin-top: 10px;
+    font-size: 14px;
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
